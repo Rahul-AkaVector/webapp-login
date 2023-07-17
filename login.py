@@ -3,11 +3,11 @@ import hashlib
 import mysql.connector
 import time
 
-mydb=mysql.connector.connect(host="localhost", user="root", password= "")
+mydb=mysql.connector.connect(host=localhost, user=root, password=passw, database=db)
 mycursor = mydb.cursor()
 
-mycursor.execute("Create Database if not exists webapp")
-mycursor.execute("Use webapp")
+# mycursor.execute("Create Database if not exists webapp")
+mycursor.execute(f"Use {db}")
 mycursor.execute("Create table if not exists login  (username varchar(50) , email varchar(30), password varchar(200))")
 
 
