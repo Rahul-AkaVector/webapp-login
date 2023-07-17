@@ -1,2 +1,2 @@
-mysql_connector_repackaged==0.3.1
+https://cdn.mysql.com/Downloads/Connector-Python/mysql-connector-python-2.1.15.tar.gz
 streamlit==1.23.1
