@@ -3,7 +3,8 @@ import hashlib
 import mysql.connector
 import time
 
-mydb=mysql.connector.connect(host=st.secrets['localhost'], user=st.secrets['root'], password=st.secrets['passw'], database=st.secrets['db'])
+mydb=mysql.connector.connect(host=st.secrets['localhost'],
+port=st.secrets['prt'], user=st.secrets['root'], password=st.secrets['passw'], database=st.secrets['db'])
 mycursor = mydb.cursor()
 
 # mycursor.execute("Create Database if not exists webapp")
