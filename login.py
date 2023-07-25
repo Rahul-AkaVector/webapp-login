@@ -8,7 +8,7 @@ port=st.secrets['prt'], user=st.secrets['root'], password=st.secrets['passw'], d
 mycursor = mydb.cursor()
 
 # mycursor.execute("Create Database if not exists webapp")
-mycursor.execute(f"Use {db}")
+mycursor.execute(f"Use {database}")
 mycursor.execute("Create table if not exists login  (username varchar(50) , email varchar(30), password varchar(200))")
 
 
